@@ -1,0 +1,133 @@
+/*variables*/
+:root{
+    --color-azul-boton:hsl(245, 82%, 62%);
+    --color-white:#fff;
+    --color-blancoAzulado:hsl(225, 100%, 94%);
+    --color-azul:hsl(245, 75%, 52%);
+    --color-blancoOscuro:hsl(0, 0%, 97%);
+    --color-grisAzulado:hsl(224, 23%, 55%);
+    --color-azulOscuro:hsl(223, 47%, 23%);
+    --fuente:'Red Hat Display', sans-serif;
+    --font-weigth:500;
+    --font-weigth2:700;
+    --font-weigth3:900;
+}
+/*estilos globales*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*estilos al body*/
+body{
+    height: 100vh;
+    font-family: var(--fuente);
+
+    background-image: url(./images/pattern-background-desktop.svg); 
+    background-repeat: no-repeat;
+    background-size: 1920px 320px;
+    background-color: var(--color-blancoAzulado);
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+ /*---------------------------------------------
+ ESTILOS LA CAJA CONTEDEDORA DE LA TARJETA 
+ -----------------------------------------------*/
+.contenedor-padre--flex{
+    background-color: var(--color-white);
+    max-width: 350px;
+    border-radius:20px;
+    overflow: hidden;
+}
+/*--------------------------------------------
+ESTILO A LA IMAGEN AZUL 
+---------------------------------------------*/
+
+.contenedor-padre--img{
+    max-width: 100%;
+    
+}
+
+/*--------------------------------------------
+ESTILO Al H1 
+---------------------------------------------*/
+
+.contenedor-padre--h1{
+font-size: 25px;
+text-align: center;
+margin-top: 35px;
+font-weight: bold;
+}
+/*--------------------------------------------
+ESTILO AL PARRAFO
+---------------------------------------------*/
+.contenedor-padre--p{
+    padding: 20px;
+    color: var(--color-grisAzulado);
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+/*---------------------------------------------
+Estilo a la caja gris
+-----------------------------------------------*/
+.contenedor-padre--article{
+    height: 60px;
+    background-color: var(--color-blancoOscuro);
+    margin: 0 25px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*-----------------------------------------------
+ESTILOS A LOS ELEMENTOS DE LA CAJA GRIS
+-----------------------------------------------*/
+
+.contenedor-padre-article--img{/**/
+    width: 35px;
+    height: 35px;
+}
+
+.contenedor-padre-article-div--span{
+    display: block;
+}
+.contenedor-padre-article-div--span,
+.contenedor-padre--a,
+.contenedor-padre-a--cancelar{
+    display: block;  
+}
+.contenedor-padre--a,
+.contenedor-padre-a--cancelar{
+ text-decoration: none;
+ text-align: center; 
+}
+
+.precio{
+    color:rgb(190, 182, 182);
+}
+
+/*.contenedor-padre-article--a{
+    color: hsl(256, 82%, 51%);
+    font-weight: 700;
+}*/
+
+.contenedor-padre--a{
+    background-color: var(--color-azul-boton);
+    padding: 8px;
+    margin: 0 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 25px;   
+}
+.contenedor-padre-a--cancelar{
+    margin-top: 25px;
+    padding-bottom:20px ;
+    color: rgb(124, 121, 121);
+    font-size: 15px;
+
+}
